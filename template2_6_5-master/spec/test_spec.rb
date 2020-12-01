@@ -1,7 +1,7 @@
 require 'test.rb'
 
 
-RSpec.describe Tests do
+RSpec.describe Test do
     before { @test= Test.new }
 
     it 'debería devolver 7 la suma de 3 + 4' do
