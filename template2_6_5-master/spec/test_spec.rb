@@ -13,4 +13,12 @@ RSpec.describe Test do
     it 'debería devolver 20, 5 productos que cuestan 4bs' do
         expect(@test.calcular_precio_base(5, 4)).to eq(20)
     end
+    it 'debería devolver 3880, 1000 productos que cuestan 4bs' do
+        precio_base=@test.calcular_precio_base(1000,4)
+        expect(@test.aplicar_descuento(1000, precio_base)).to eq(3880)
+    end
+    it 'debería devolver 400, 100 productos que cuestan 4bs' do
+        precio_base=@test.calcular_precio_base(100,4)
+        expect(@test.aplicar_descuento(100, precio_base)).to eq(400)
+    end
 end
