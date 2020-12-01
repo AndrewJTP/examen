@@ -9,5 +9,8 @@ RSpec.describe Test do
     end
     it 'debería devolver 15, 5 productos que cuestan 3bs' do
         expect(@test.calcular_precio_base(5, 3)).to eq(15)
-     end
+    end
+    it 'debería devolver 20, 5 productos que cuestan 4bs' do
+        expect(@test.calcular_precio_base(5, 4)).to eq(20)
+    end
 end
