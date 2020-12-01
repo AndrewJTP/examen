@@ -14,7 +14,12 @@ class Test
             descuento=precio_base*0.03
             precio=precio_base-descuento
         else
-            precio=precio_base
+            if cantidad_items>=3000 and cantidad_items<7000
+                descuento=precio_base*0.05
+                precio=precio_base-descuento
+            else
+                precio=precio_base
+            end
         end
         precio
     end
